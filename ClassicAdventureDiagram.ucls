@@ -1,0 +1,272 @@
+<class-diagram version="0.9.86" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true">  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Character" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Character.java" binary="false">    
+    <position x="355" y="163" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Row" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Row.java" binary="false">    
+    <position x="1014" y="301" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Bot" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Bot.java" binary="false">    
+    <position x="145" y="133" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Player" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Player.java" binary="false">    
+    <position x="539" y="92" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Item" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Item.java" binary="false">    
+    <position x="807" y="360" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Room" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false">    
+    <position x="389" y="523" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.GameHandler" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/GameHandler.java" binary="false">    
+    <position x="1053" y="135" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.PuzzleQueue.Node" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false">    
+    <position x="844" y="51" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.PuzzleQueue" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false">    
+    <position x="705" y="93" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <class corner="BOTTOM_RIGHT" language="java" name="adventureGame.Level" project="Classic Adventure Quest" 
+    file="/Classic Adventure Quest/src/adventureGame/Level.java" binary="false">    
+    <position x="126" y="414" width="-1" height="-1"/>    
+    <display autosize="true" package="true" initial-value="false" signature="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true"/>      
+      <operations public="true" package="true" protected="true" private="true"/>    
+    </display>  
+  </class>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="false">      
+      <attribute name="item"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Item" 
+      file="/Classic Adventure Quest/src/adventureGame/Item.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.PuzzleQueue" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="false">      
+      <attribute name="first"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Level" 
+      file="/Classic Adventure Quest/src/adventureGame/Level.java" binary="false" navigable="false">      
+      <attribute name="zero"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="false">      
+      <attribute name="item"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Item" 
+      file="/Classic Adventure Quest/src/adventureGame/Item.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Player" 
+      file="/Classic Adventure Quest/src/adventureGame/Player.java" binary="false" navigable="false">      
+      <attribute name="theItems"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.PuzzleQueue" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <bendpoint x="251" y="367"/>    
+    <bendpoint x="257" y="394"/>    
+    <source project="Classic Adventure Quest" name="adventureGame.Character" 
+      file="/Classic Adventure Quest/src/adventureGame/Character.java" binary="false" navigable="false">      
+      <attribute name="room"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Bot" 
+      file="/Classic Adventure Quest/src/adventureGame/Bot.java" binary="false" navigable="false">      
+      <attribute name="current"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Level" 
+      file="/Classic Adventure Quest/src/adventureGame/Level.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Level" 
+      file="/Classic Adventure Quest/src/adventureGame/Level.java" binary="false" navigable="false">      
+      <attribute name="cornerStone"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="false">      
+      <attribute name="next"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <bendpoint x="256" y="342"/>    
+    <source project="Classic Adventure Quest" name="adventureGame.Level" 
+      file="/Classic Adventure Quest/src/adventureGame/Level.java" binary="false" navigable="false">      
+      <attribute name="items"/>      
+      <multiplicity minimum="0" maximum="2147483647"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Item" 
+      file="/Classic Adventure Quest/src/adventureGame/Item.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <bendpoint x="453" y="722"/>    
+    <bendpoint x="542" y="720"/>    
+    <bendpoint x="541" y="641"/>    
+    <source project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="false">      
+      <attribute name="south"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="false">      
+      <attribute name="east"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization>    
+    <source project="Classic Adventure Quest" name="adventureGame.Player" 
+      file="/Classic Adventure Quest/src/adventureGame/Player.java" binary="false"/>    
+    <target project="Classic Adventure Quest" name="adventureGame.Character" 
+      file="/Classic Adventure Quest/src/adventureGame/Character.java" binary="false"/>  
+  </generalization>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="false">      
+      <attribute name="last"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="false">      
+      <attribute name="west"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <nesting>    
+    <source project="Classic Adventure Quest" name="adventureGame.PuzzleQueue" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false"/>    
+    <target project="Classic Adventure Quest" name="adventureGame.PuzzleQueue.Node" 
+      file="/Classic Adventure Quest/src/adventureGame/PuzzleQueue.java" binary="false"/>  
+  </nesting>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="false">      
+      <attribute name="north"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association>    
+    <source project="Classic Adventure Quest" name="adventureGame.Item" 
+      file="/Classic Adventure Quest/src/adventureGame/Item.java" binary="false" navigable="false">      
+      <attribute name="room"/>      
+      <multiplicity minimum="0" maximum="1"/>    
+    </source>    
+    <target project="Classic Adventure Quest" name="adventureGame.Room" 
+      file="/Classic Adventure Quest/src/adventureGame/Room.java" binary="false" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization>    
+    <source project="Classic Adventure Quest" name="adventureGame.Bot" 
+      file="/Classic Adventure Quest/src/adventureGame/Bot.java" binary="false"/>    
+    <target project="Classic Adventure Quest" name="adventureGame.Character" 
+      file="/Classic Adventure Quest/src/adventureGame/Character.java" binary="false"/>  
+  </generalization>  
+  <classifier-display autosize="true" package="true" initial-value="false" signature="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true"/>    
+    <operations public="true" package="true" protected="true" private="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
